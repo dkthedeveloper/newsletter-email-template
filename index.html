@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modern Newsletter HTML Email Template</title>
     <style type="text/css">
+	 
       body {
+		box-sizing: border-box;
         margin: 0;
-        width: 100%;
-        height: 100%;
         background-color: #e5e5e5;
         font-size: 13px;
         font-family: Arial, Helvetica, sans-serif;
@@ -23,35 +23,59 @@
       img {
         border: 0;
       }
-      .wrapper, .footer {
-        width: 671px !important;
-        max-width: 671px;
+      .wrapper {
+        width: 100%;
         table-layout: fixed;
-        background-color: #ffffff;
-        padding-bottom: 60px;
-        margin: auto;
+        background-color: #e5e5e5;
+        padding: 0 0 60px;
       }
+	  .container {
+		max-width: 700px;
+		margin: 0 auto;
+	  }
 	  .footer {
 		background-color: #e5e5e5!important;
+		width: 100%;
+        table-layout: fixed;
+		padding: 60px 0;
+		margin: 0;
+		border-spacing: 0;
+		
 	  }
       .main {
         margin: auto;
         width: 100%;
-        max-width: 509px;
+	
         border-spacing: 0;
         font-family: Arial, Helvetica, sans-serif;
         color: #171a1b;
         text-align: center;
+		background-color: #ffffff;
+		padding: 0 71px;
+		
       }
+	  
+	  
       a {
         font-weight: 700;
         color: #0e1529;
-        text-decoration: underline !important;
+        text-decoration: underline!important;
       }
+	  .two-columns {
+		display: flex;
+		justify-content: space-between;
+	  }
       .column {
         width: 239.23px;
-        max-width: 239.23px;
+        max-width: 50%;
+		
       }
+	  .column:nth-child(1) {
+		padding-right: 30px;
+	  }
+	  .column:nth-child(2) {
+		padding-left: 30px;
+	  }
 	  .footer a {
 		text-decoration: none!important;
 	  }
@@ -64,360 +88,446 @@
 		color: #777777!important;
 		font-weight: 100;
 	  }
+	  .socials, .app-store {
+		display: inline-block;
+	  }
+	  .app-store {
+		border-left: 1px solid #cccccc;
+	  }
+	  .contact {
+		display: inline-block;
+	  }
+	
+	@media screen and (max-width: 600px) {
+		
+		.main, .footer {
+			width: 100%;
+		}
+		.main {
+			padding: 0 30px!important;
+			margin: 0!important;
+		}
+		.container {
+			width: 100%!important;
+			max-width: none!important;
+			margin: 0!important;
+	  }
+		.footer {
+			padding: 40px 0 0!important;
+			
+		}
+		.two-columns {
+			width: 100%!important;
+		}
+		.column {
+			width: 100%!important;
+			min-width: 100%!important;
+			display: block!important;
+			padding: 10px!important;
+			margin: auto;
+		}
+		.column #img-1 {
+			width: 90%!important;
+		}
+		#listen {
+			background-color: rgb(47, 93, 245)!important;
+			border: none!important;
+			color: #ffffff!important;
+		}
+		.socials, .app-store {
+		display: block!important;
+	  }
+	  .app-store {
+		margin: 20px 0 0!important;
+		border-left: none!important;
+	  }
+	  .contact {
+		display: block!important;
+	  }
+	  .contact a:nth-child(even), .contact a:last-child {
+		border-left: 1px solid #cccccc!important;
+	  }
+
+	}
+		
+	  
+
     </style>
   </head>
-  <body>
-    <center class="wrapper">
-      <table class="main">
-        <tr>
-          <td width="100%">
-            <div style="height: 70px"></div>
-          </td>
-        </tr>
-        <tr>
-          <th valign="middle" align="left" class="column">
-            <a
-              target="_blank"
-              href="#"
-              style="display: inline-block; width: 100%"
-            >
-              <img
-                style="width: 72px; max-width: 100%"
-                src="https://i.ibb.co/48GKSf3/unnamed-4.png"
-                title="Waking Up Logo"
-                alt="Waking Up Logo"
-              />
-            </a>
-          </th>
-        </tr>
-        <tr>
-          <td width="100%">
-            <div style="height: 70px"></div>
-          </td>
-        </tr>
-        <tr>
-          <td width="100%" align="center">
-            <div
-              style="
-                text-align: left;
-                font-size: 14px;
-                font-family: Arial, Helvetica, sans-serif;
-                font-weight: 400;
-                line-height: 22px;
-                color: #0e1529;
-              "
-            >
-              This week, we released
-              <a href="#" target="_blank"> How Much Does the Future Matter?</a>
-              , a conversation between Sam and philosopher William MacAskill, a
-              prominent voice in the effective altruism movement. An important
-              tenet of effective altruism is to focus on maximizing the good
-              each of us can do in our lifetimes—and the lifetimes of
-              generations to come—even if we can’t actually see the good we’re
-              accomplishing firsthand.
-
-              <br />
-              <br />
-
-              In
-              <a href="#" target="_blank">You Are Living the Dream Life</a>,
-              William B. Irvine offers us a way to connect more directly to the
-              plight of those many of us won't encounter regularly, if at all.
-              His “trans-life meditation” asks us to contemplate everyone who
-              might view our own lives to be the dream life—especially those
-              living in extreme poverty. Engaging in this reflection, he says,
-              can “dramatically change [our] outlook” and help guide us to
-              become more generous with our time and resources.
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td width="100%">
-            <div style="height: 40px"></div>
-          </td>
-        </tr>
-        <tr>
-          <td width="100%" align="center">
-            <table class="two-columns" width="100%" align="center">
+<body>
+    <center class="wrapper" align="center" width="100%">
+		<table class="container" width="100%" height="100%" align="center">
 			<tr>
-              <td class="column" align="left">
-                <a href="#" target="_blank">
-                  <img
-                    style="width: 239.23px"
-                    src="https://i.ibb.co/6Dfvz5K/unnamed-5.jpg"
-                    alt=""
-                  />
-                </a>
-                <div style="height:10px"></div>
-                <div
-                  style="
-                    font-size: 8px;
-                    font-weight: 700;
-                    color: #cccccc;
-                    text-transform: uppercase;
-                    letter-spacing: 2px;
-                  "
-                >
-                  ARTWORK BY DORIAN LEGRET
-                </div>
-              </td>
-			  <td class="column" align="right" valign="top">
-				<table valign="top" width="239.23px">
-				  <tr>
-					<td
-					  valign="top"
-						  style="
-							font-family: Helvetica, sans-serif;
-							letter-spacing: 2px;
-							text-transform: uppercase;
-							line-height: 18px;
-							color: #777777;
-							font-size: 12px;
-							font-weight: 700;
-						  "
-						>
-						  <img width="10px" src="https://i.ibb.co/PFx05sc/unnamed-6.png" alt="" />
-						  THE STOIC PATH
-							</td>
-						  </tr>
-						  <tr>
-							<td height="5px"></td>
-						  </tr>
-						  <tr>
-							  <td style="line-height:24px;font-family:Helvetica,sans-serif;font-size:18px;color:#0e1529;font-weight:bold">
-								You Are Living the Dream Life
-							</td>
-						</tr>
-						<tr>
-						  <td height="20px"></td>
-						</tr>
-						<tr>
-							<td style="font-family:Helvetica,sans-serif;line-height:22px;color:#0e1529;font-size:14px;font-weight:400">
-								by William B. Irvine
-							</td>
-						</tr>
-						<tr>
-						  <td height="20px"></td>
-						</tr>
-						<tr>
-							<td align="left" width="100%">
-								<a href="#" target="_blank" style="text-decoration:none;color:#1e2950;font-size:11px;display:inline-block;background-color:#ffffff;border-radius:4px;font-family:Helvetica,sans-serif;font-style:normal;line-height:22px;width:auto;text-align:center;text-transform:uppercase;font-weight:700;letter-spacing:1px;padding:10px 20px; border-radius:4px;width:auto;border:2px solid #1e2950; text-decoration: none!important;">
-								LISTEN NOW
-								</a>
-							</td>
-						</tr>
-					</table>
-				</td>
-            </table>
-          </td>
-          </td>
-        </tr>
-		<tr>
-			<td width="100%">
-			  <div style="height: 40px; border-bottom: 1px solid #cccccc;"></div>
-			</td>
-		</tr>
-		<tr>
-			<td width="100%">
-			  <div style="height: 40px;"></div>
-			</td>
-		</tr>
-		<tr>
-			<td width="100%">
-				<div style="font-size: 22px; font-weight:700; text-align: left;">
-					From the Waking Up community
-				</div>
-			</td>
-		</tr>
-		<tr>
-			<td style="height: 20px;"></td>
-		</tr>
-		<tr>
-			<td width="100%">
-				<div style="font-family:Georgia,sans-serif;line-height:28px;color:#0e1529;font-size:16px;font-weight:400;
-				text-align: left; font-style: italic;">
-					"This app has quite literally changed the way I interface with 
-					the world for the better. Dedicating even ten minutes a day has 
-					improved my relationships with friends, family, loved ones, and most 
-					importantly, with myself. It has made me more patient, more empathetic, 
-					and more rooted in the present experience of each moment."
-				</div>
-			</td>
-		</tr>
-		<tr>
-			<td style="height: 20px;"></td>
-		</tr>
-		<tr>
-			<td>
-				<div style="font-family:Helvetica,sans-serif;line-height:16px;color:#0e1529;font-size:10px;font-weight:700;
-				text-transform:uppercase;letter-spacing:2px; text-align: left;">
-					—JONTHEPIRATE, APPLE REVIEW
-				</div>
-			</td>
-		</tr>
-		<tr>
-			<td width="100%">
-			  <div style="height: 40px; border-bottom: 1px solid #cccccc;"></div>
-			</td>
-		</tr>
-		<tr>
-			<td width="100%">
-			  <div style="height: 40px;"></div>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<a href="#" target="_blank">
-					<img style="width: 509px; max-width:100%" src="https://i.ibb.co/CnsrpHj/unnamed-7.png" alt="">
-				</a>
-			</td>
-		</tr>
-		<tr>
-			<td width="100%">
-			  <div style="height: 30px;"></div>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<div style="font-size: 22px; font-weight:700; text-align: left;">
-					Give a free month of Waking Up.
-				</div>
-			</td>
-		</tr>
-		<tr>
-			<td width="100%">
-			  <div style="height: 20px;"></div>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<div style="font-size: 14px; text-align: left; line-height: 22px;">
-					As a Waking Up member, you can now share 30 free days of unlimited access with anyone. 
-					If Waking Up has had an impact on your life, please share the link below with someone 
-					else you think might benefit:
+				<td width="100%">
 
-					<br>
-					<br>
-					<a style="color: rgb(19, 72, 247); text-decoration: underline;" href="#" target="_blank">
-					https://wakingup.com/30share
+				
+		<table class="main" align="center" width="100%">
+			<tr>
+			<td width="100%">
+				<div style="height: 70px"></div>
+			</td>
+			</tr>
+			<tr>
+			<th valign="middle" align="left" class="column">
+				<a
+				target="_blank"
+				href="#"
+				style="display: inline-block; width: 100%"
+				>
+				<img
+					style="width: 72px; max-width: 100%"
+					src="https://i.ibb.co/48GKSf3/unnamed-4.png"
+					title="Waking Up Logo"
+					alt="Waking Up Logo"
+				/>
+				</a>
+			</th>
+			</tr>
+			<tr>
+			<td width="100%">
+				<div style="height: 70px"></div>
+			</td>
+			</tr>
+			<tr>
+			<td width="100%" align="center">
+				<div
+				style="
+					text-align: left;
+					font-size: 14px;
+					font-family: Arial, Helvetica, sans-serif;
+					font-weight: 400;
+					line-height: 22px;
+					color: #0e1529;
+				"
+				>
+				This week, we released
+				<a href="#" target="_blank"> How Much Does the Future Matter?</a>
+				, a conversation between Sam and philosopher William MacAskill, a
+				prominent voice in the effective altruism movement. An important
+				tenet of effective altruism is to focus on maximizing the good
+				each of us can do in our lifetimes—and the lifetimes of
+				generations to come—even if we can’t actually see the good we’re
+				accomplishing firsthand.
+
+				<br />
+				<br />
+
+				In
+				<a href="#" target="_blank">You Are Living the Dream Life</a>,
+				William B. Irvine offers us a way to connect more directly to the
+				plight of those many of us won't encounter regularly, if at all.
+				His “trans-life meditation” asks us to contemplate everyone who
+				might view our own lives to be the dream life—especially those
+				living in extreme poverty. Engaging in this reflection, he says,
+				can “dramatically change [our] outlook” and help guide us to
+				become more generous with our time and resources.
+				</div>
+			</td>
+			</tr>
+			<tr>
+			<td width="100%">
+				<div style="height: 40px"></div>
+			</td>
+			</tr>
+			<tr>
+			<td width="100%" align="center">
+				<table class="two-columns" width="100%" align="center">
+				<tr>
+				<td class="column">
+					<a href="#" target="_blank">
+					<img id="img-1"
+						style="width: 100%"
+						src="https://i.ibb.co/6Dfvz5K/unnamed-5.jpg"
+						alt=""
+					/>
+					</a>
+					<div style="height:10px"></div>
+					<div
+					style="
+						font-size: 8px;
+						font-weight: 700;
+						color: #cccccc;
+						text-transform: uppercase;
+						letter-spacing: 2px;
+					"
+					>
+					ARTWORK BY DORIAN LEGRET
+					</div>
+				</td>
+				<td class="column" valign="top">
+					<table valign="top" width="239.23px">
+					<tr>
+						<td
+						valign="top"
+							style="
+								font-family: Helvetica, sans-serif;
+								letter-spacing: 2px;
+								text-transform: uppercase;
+								line-height: 18px;
+								color: #777777;
+								font-size: 12px;
+								font-weight: 700;
+							"
+							>
+							<img width="10px" src="https://i.ibb.co/PFx05sc/unnamed-6.png" alt="" />
+							THE STOIC PATH
+								</td>
+							</tr>
+							<tr>
+								<td height="5px"></td>
+							</tr>
+							<tr>
+								<td style="line-height:24px;font-family:Helvetica,sans-serif;font-size:18px;color:#0e1529;font-weight:bold">
+									You Are Living the Dream Life
+								</td>
+							</tr>
+							<tr>
+							<td height="20px"></td>
+							</tr>
+							<tr>
+								<td style="font-family:Helvetica,sans-serif;line-height:22px;color:#0e1529;font-size:14px;font-weight:400">
+									by William B. Irvine
+								</td>
+							</tr>
+							<tr>
+							<td height="20px"></td>
+							</tr>
+							<tr>
+								<td align="left" width="100%">
+									<a id="listen" href="#" target="_blank" style="text-decoration:none;color:#1e2950;font-size:11px;display:inline-block;background-color:#ffffff;border-radius:4px;font-family:Helvetica,sans-serif;font-style:normal;line-height:22px;width:auto;text-align:center;text-transform:uppercase;font-weight:700;letter-spacing:1px;padding:10px 20px; border-radius:4px;width:auto;border:2px solid #1e2950; text-decoration: none!important;">
+									LISTEN NOW
+									</a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</table>
+			</td>
+			</td>
+			</tr>
+			<tr>
+				<td width="100%" align="center">
+				<div style="height: 40px; border-bottom: 1px solid #cccccc;"></div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" align="center">
+				<div style="height: 40px;"></div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" align="center">
+					<div style="font-size: 22px; font-weight:700; text-align: left;">
+						From the Waking Up community
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td style="height: 20px;"></td>
+			</tr>
+			<tr>
+				<td width="100%" align="center">
+					<div style="font-family:Georgia,sans-serif;line-height:28px;color:#0e1529;font-size:16px;font-weight:400;
+					text-align: left; font-style: italic;">
+						"This app has quite literally changed the way I interface with 
+						the world for the better. Dedicating even ten minutes a day has 
+						improved my relationships with friends, family, loved ones, and most 
+						importantly, with myself. It has made me more patient, more empathetic, 
+						and more rooted in the present experience of each moment."
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td style="height: 20px;" align="center"></td>
+			</tr>
+			<tr>
+				<td align="center">
+					<div style="font-family:Helvetica,sans-serif;line-height:16px;color:#0e1529;font-size:10px;font-weight:700;
+					text-transform:uppercase;letter-spacing:2px; text-align: left;">
+						—JONTHEPIRATE, APPLE REVIEW
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" align="center">
+				<div style="height: 40px; border-bottom: 1px solid #cccccc;"></div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" align="center">
+				<div style="height: 40px;"></div>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					<a href="#" target="_blank">
+						<img style="width: 509px; max-width:100%" src="https://i.ibb.co/CnsrpHj/unnamed-7.png" alt="">
+					</a>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" align="center">
+				<div style="height: 30px;"></div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div style="font-size: 22px; font-weight:700; text-align: left;">
+						Give a free month of Waking Up.
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" align="center">
+				<div style="height: 20px;"></div>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					<div style="font-size: 14px; text-align: left; line-height: 22px;">
+						As a Waking Up member, you can now share 30 free days of unlimited access with anyone. 
+						If Waking Up has had an impact on your life, please share the link below with someone 
+						else you think might benefit:
+
+						<br>
+						<br>
+						<a style="color: rgb(19, 72, 247); text-decoration: underline;" href="#" target="_blank">
+						https://wakingup.com/30share
+						</a>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%">
+				<div style="height: 40px; border-bottom: 1px solid #cccccc;"></div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" align="center">
+				<div style="height: 30px;"></div>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					<div style="font-size: 22px; font-weight:700; text-align: left;">
+						A new operating system for your mind.
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" align="center">
+				<div style="height: 20px;"></div>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					<div style="font-size: 14px; text-align: left; line-height: 22px;">
+						Waking Up isn’t just another meditation app. We help you open the door to a 
+						deeper understanding of yourself—and a new way of seeing the world.
+
+						<br>
+						<br>
+
+						Your membership makes it possible for us to offer the Waking Up to anyone who can't 
+						afford it for <a href="#" target="_blank">free</a>—and to donate a minimum of 10% of our profits to the 
+						<a href="#" target="_blank">most effective charities</a> throughout the world.
+						
+						<br>
+						<br>
+
+						<span style="font-weight: 700; letter-spacing: 2px; font-size: 13px;">THE WAKING UP TEAM</span>
+
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" align="center" style="height: 60px;"></td>
+			</tr>
+			<tr>
+				<td width="100%" align="center">
+
+				</td>
+			</tr>
+			
+		</table>
+		<table class="footer" width="100%" align="center">
+		<tr>
+			<td width="100%" align="center">
+				<div class="socials">
+					<a href="#" target="_blank">
+						<img style="padding: 5px 20px; width: 20px;" src="https://i.ibb.co/107yWYR/unnamed-8.png" alt="facebook">
+					</a>
+					<a href="#" target="_blank">
+						<img style="padding: 5px 10px; width: 20px; " src="https://i.ibb.co/2jVMBGH/unnamed-9.png" alt="twitter">
+					</a>
+					<a href="#" target="_blank">
+						<img style="padding: 5px 20px; width: 20px;" src="https://i.ibb.co/Jv3mrX0/unnamed-10.png" alt="instagram">
+					</a>
+				</div>
+				<div class="app-store">
+					<a href="#" target="_blank">
+						<img style="padding: 0 10px 0 20px; width: 77px;" src="https://i.ibb.co/ZNF4Rk2/unnamed-11.png" alt="facebook">
+					</a>
+					<a href="#" target="_blank">
+						<img style="padding: 0 10px 0 0; width: 86px;" src="https://i.ibb.co/z2JkMtr/unnamed-12.png" alt="facebook">
 					</a>
 				</div>
 			</td>
 		</tr>
 		<tr>
-			<td width="100%">
-			  <div style="height: 40px; border-bottom: 1px solid #cccccc;"></div>
-			</td>
+			<td width="100%" style="height: 20px;"></td>
 		</tr>
 		<tr>
-			<td width="100%">
-			  <div style="height: 30px;"></div>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<div style="font-size: 22px; font-weight:700; text-align: left;">
-					A new operating system for your mind.
+			<td width="100%" align="center">
+				<div class="links" style="font-family:Helvetica,sans-serif;
+				line-height:27px;font-size:13px;font-weight:700;white-space:nowrap;">
+					<div class="contact">
+						<a href="#" target="_blank">
+						FAQ + Support
+						</a>
+						<a href="#" target="_blank">
+						Foundation
+						</a>
+					</div>
+					<div class="contact">
+						<a href="#" target="_blank">
+						Send a Gift
+						</a>
+						<a href="#" target="_blank">
+						Subscribe
+						</a>
+						<a href="#" target="_blank">
+						Share
+						</a>
+					</div>
 				</div>
 			</td>
 		</tr>
 		<tr>
-			<td width="100%">
-			  <div style="height: 20px;"></div>
-			</td>
+			<td width="100%" style="height: 20px;" align="center"></td>
 		</tr>
 		<tr>
-			<td>
-				<div style="font-size: 14px; text-align: left; line-height: 22px;">
-					Waking Up isn’t just another meditation app. We help you open the door to a 
-					deeper understanding of yourself—and a new way of seeing the world.
-
-					<br>
-					<br>
-
-					Your membership makes it possible for us to offer the Waking Up to anyone who can't 
-					afford it for <a href="#" target="_blank">free</a>—and to donate a minimum of 10% of our profits to the 
-					<a href="#" target="_blank">most effective charities</a> throughout the world.
-					
-					<br>
-					<br>
-
-					<span style="font-weight: 700; letter-spacing: 2px; font-size: 13px;">THE WAKING UP TEAM</span>
-
-				</div>
-			</td>
-		</tr>
+			<td class="last" width="100%" align="center">
+				<div style="padding: 0 101px; text-align: center; font-size: 10px; line-height: 22px; color: #777777;">
+					<p>Waking Up LLC 1040 1st Ave., #226, New York, NY 10022</p>
+					<p>Copyright 2022 — All rights reserved. <a href="#" target="_blank">Update your message preferences</a>, 
+					or if you're absolutely certain about it, you may completely <a href="#" target="_blank">unsubscribe from our emails</a>.</p>
 		
-	</table>
-</center>
-<center class="footer">
-	<table width="100%" align="center" style="background-color: #e5e5e5; padding: 60px 0 0">
-	<tr>
-		<td width="100%" align="center">
-			<a href="#" target="_blank">
-				<img style="padding: 5px 20px; width: 20px;" src="https://i.ibb.co/107yWYR/unnamed-8.png" alt="facebook">
-			</a>
-			<a href="#" target="_blank">
-				<img style="padding: 5px 10px; width: 20px; " src="https://i.ibb.co/2jVMBGH/unnamed-9.png" alt="facebook">
-			</a>
-			<a href="#" target="_blank">
-				<img style="padding: 5px 20px; width: 20px;" src="https://i.ibb.co/Jv3mrX0/unnamed-10.png" alt="facebook">
-			</a>
-			<a href="#" target="_blank">
-				<img style="padding: 0 10px 0 20px; width: 77px; border-left: 1px solid #cccccc;" src="https://i.ibb.co/ZNF4Rk2/unnamed-11.png" alt="facebook">
-			</a>
-			<a href="#" target="_blank">
-				<img style="padding: 0 10px 0 0; width: 86px;" src="https://i.ibb.co/z2JkMtr/unnamed-12.png" alt="facebook">
-			</a>
-		</td>
-	</tr>
-	<tr>
-		<td width="100%" style="height: 20px;"></td>
-	</tr>
-	<tr>
-		<td width="100%" align="center">
-			<div class="links" style="font-family:Helvetica,sans-serif;
-			line-height:27px;font-size:13px;font-weight:700;white-space:nowrap;">
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td width="100%" align="center" style="padding: 20px 0 0;">
 				<a href="#" target="_blank">
-				FAQ + Support
+					<img style="width: 154px;" src="https://i.ibb.co/ph6n6Cz/unnamed-13.png" alt="">
 				</a>
-				<a href="#" target="_blank">
-				Foundation
-				</a>
-				<a href="#" target="_blank">
-				Send a Gift
-				</a>
-				<a href="#" target="_blank">
-				Subscribe
-				</a>
-				<a href="#" target="_blank">
-				Share
-				</a>
-			</div>
-		</td>
+			</td>
+		</tr>
+		</table>
+	</td>
 	</tr>
-	<tr>
-		<td width="100%" style="height: 20px;"></td>
-	</tr>
-	<tr>
-		<td class="last" width="100%" align="center">
-			<div style="padding: 0 101px; text-align: center; font-size: 10px; line-height: 22px; color: #777777;">
-				<p>Waking Up LLC 1040 1st Ave., #226, New York, NY 10022</p>
-				<p>Copyright 2022 — All rights reserved. <a href="#" target="_blank">Update your message preferences</a>, 
-				or if you're absolutely certain about it, you may completely <a href="#" target="_blank">unsubscribe from our emails</a>.</p>
-
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td width="100%" align="center" style="padding: 20px 0 0;">
-			<a href="#" target="_blank">
-				<img style="width: 154px;" src="https://i.ibb.co/ph6n6Cz/unnamed-13.png" alt="">
-			</a>
-		</td>
-	</tr>
-	</table>
+</table>
 </center>
 
-  </body>
+</body>
 </html>
